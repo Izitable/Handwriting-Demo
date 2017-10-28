@@ -1,0 +1,599 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFF",
+      "flex": 1,
+      "flexDirection": "column",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#283593",
+        "borderBottomWidth": 1,
+        "borderColor": "#ddd",
+        "elevation": 5,
+        "flexDirection": "row",
+        "height": 64,
+        "shadowColor": "#000",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.8,
+        "shadowRadius": 2,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flex": 7,
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        disabled={false}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 22,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Handwriting Demo
+      </Text>
+    </View>
+  </View>
+  <RCTScrollView
+    style={
+      Object {
+        "paddingTop": 8,
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 6,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontSize": 22,
+              }
+            }
+          >
+            Text:
+          </Text>
+          <TextInput
+            onChangeText={[Function]}
+            placeholder="Your text here"
+            style={
+              Object {
+                "height": 40,
+              }
+            }
+            underlineColorAndroid="#283593"
+            value=""
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 6,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontSize": 22,
+              }
+            }
+          >
+            Handwriting:
+          </Text>
+          <View
+            style={undefined}
+          >
+            <RCTPicker
+              items={Array []}
+              onChange={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              selectedIndex={0}
+              style={
+                Array [
+                  Object {
+                    "height": 216,
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 6,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontSize": 22,
+              }
+            }
+          >
+            Size:
+          </Text>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "marginBottom": 8,
+                "marginTop": 8,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+            >
+              100
+              px
+            </Text>
+            <RCTSlider
+              disabled={false}
+              enabled={true}
+              maximumValue={200}
+              minimumValue={100}
+              onChange={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onSlidingComplete={undefined}
+              onStartShouldSetResponder={[Function]}
+              onValueChange={[Function]}
+              step={2}
+              style={
+                Array [
+                  Object {
+                    "height": 40,
+                  },
+                  Object {
+                    "flex": 1,
+                  },
+                ]
+              }
+              value={100}
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 6,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontSize": 22,
+              }
+            }
+          >
+            Color:
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "space-around",
+              }
+            }
+          >
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              collapsable={undefined}
+              hitSlop={undefined}
+              isTVSelectable={true}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#000000",
+                  "borderColor": "#000",
+                  "borderRadius": 2,
+                  "borderWidth": 2,
+                  "height": 40,
+                  "marginBottom": 8,
+                  "marginTop": 8,
+                  "opacity": 1,
+                  "width": 40,
+                }
+              }
+              testID={undefined}
+              tvParallaxProperties={undefined}
+            />
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              collapsable={undefined}
+              hitSlop={undefined}
+              isTVSelectable={true}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#0000ff",
+                  "borderColor": "#000",
+                  "borderRadius": 2,
+                  "borderWidth": 1,
+                  "height": 25,
+                  "marginBottom": 8,
+                  "marginTop": 8,
+                  "opacity": 1,
+                  "width": 25,
+                }
+              }
+              testID={undefined}
+              tvParallaxProperties={undefined}
+            />
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              collapsable={undefined}
+              hitSlop={undefined}
+              isTVSelectable={true}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#008000",
+                  "borderColor": "#000",
+                  "borderRadius": 2,
+                  "borderWidth": 1,
+                  "height": 25,
+                  "marginBottom": 8,
+                  "marginTop": 8,
+                  "opacity": 1,
+                  "width": 25,
+                }
+              }
+              testID={undefined}
+              tvParallaxProperties={undefined}
+            />
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              collapsable={undefined}
+              hitSlop={undefined}
+              isTVSelectable={true}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#ff0000",
+                  "borderColor": "#000",
+                  "borderRadius": 2,
+                  "borderWidth": 1,
+                  "height": 25,
+                  "marginBottom": 8,
+                  "marginTop": 8,
+                  "opacity": 1,
+                  "width": 25,
+                }
+              }
+              testID={undefined}
+              tvParallaxProperties={undefined}
+            />
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              collapsable={undefined}
+              hitSlop={undefined}
+              isTVSelectable={true}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#ffff00",
+                  "borderColor": "#000",
+                  "borderRadius": 2,
+                  "borderWidth": 1,
+                  "height": 25,
+                  "marginBottom": 8,
+                  "marginTop": 8,
+                  "opacity": 1,
+                  "width": 25,
+                }
+              }
+              testID={undefined}
+              tvParallaxProperties={undefined}
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+  </RCTScrollView>
+  <View
+    style={
+      Object {
+        "flex": 4,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 2,
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Image
+        resizeMode="cover"
+        source={
+          Object {
+            "uri": null,
+          }
+        }
+        style={
+          Object {
+            "flex": 1,
+            "width": "90%",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "justifyContent": "flex-end",
+          "padding": 16,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#5f5fc4",
+            "borderRadius": 5,
+            "elevation": 5,
+            "flex": 6,
+            "justifyContent": "center",
+            "minHeight": 56,
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "white",
+              "fontSize": 18,
+            }
+          }
+        >
+          Get Handwriting
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
