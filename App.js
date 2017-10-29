@@ -104,6 +104,7 @@ export default class App extends React.Component {
             <View style={styles.centerContainer}>
               <Text style={styles.formHeadline}>Handwriting:</Text>
               <Picker
+                itemStyle={styles.pickerItemStyle}
                 mode="dropdown"
                 selectedValue={this.state.selectedHandwriting}
                 onValueChange={(itemValue, itemIndex) =>
@@ -194,11 +195,10 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.8,
     shadowRadius: 2,
-    borderBottomWidth: 1,
-    borderColor: "#ddd",
     elevation: 5,
     backgroundColor: "#283593"
   },
+  pickerItemStyle: { height: 100 },
   simpleFlex: { flex: 1 },
   toolbarTextContainer: { flex: 7, justifyContent: "center" },
   toolbarText: { fontWeight: "bold", color: "white", fontSize: 22 },

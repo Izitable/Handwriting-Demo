@@ -1,5 +1,9 @@
 This is a demo app developed using React-Native using Handwriting.io API
 
+You can choose handwriting style, color and size and get text handwritten in image form.
+
+Print Screens can be found in the prints folder
+
 
 ## Running
 
