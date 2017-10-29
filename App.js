@@ -13,7 +13,6 @@ import {
   Keyboard,
   ScrollView
 } from "react-native";
-import base64 from "base-64";
 import { getWritings, getRender } from "./src/api/handwriting";
 import ColorItem from "./src/components/ColorItem/index";
 import { base64ArrayBuffer } from "./src/utils/base64ArrayBuffer";
@@ -158,16 +157,10 @@ export default class App extends React.Component {
             <View style={styles.simpleFlex} />
           </View>
         </ScrollView>
-        <View style={{ flex: 4 }}>
-          <View
-            style={{
-              flex: 2,
-              alignItems: "center",
-              justifyContent: "center"
-            }}
-          >
+        <View style={styles.bottomView}>
+          <View style={styles.imageView}>
             <Image
-              style={{ flex: 1, width: "90%" }}
+              style={styles.image}
               resizeMode="cover"
               source={{ uri: this.state.render }}
             />
@@ -245,5 +238,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-around",
     alignItems: "center"
-  }
+  },
+  bottomView: { flex: 4 },
+  imageView: {
+    flex: 2,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  image: { flex: 1, width: "90%" }
 });
