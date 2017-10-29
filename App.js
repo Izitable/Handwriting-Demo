@@ -13,8 +13,10 @@ import {
   Keyboard,
   ScrollView
 } from "react-native";
+import base64 from "base-64";
 import { getWritings, getRender } from "./src/api/handwriting";
 import ColorItem from "./src/components/ColorItem/index";
+import { base64ArrayBuffer } from "./src/utils/base64ArrayBuffer";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -49,15 +51,6 @@ export default class App extends React.Component {
       .catch(error => alert(error));
   }
 
-  encodeBinary = binary => {
-    return btoa(
-      new Uint8Array(binary).reduce(
-        (data, byte) => data + String.fromCharCode(byte),
-        ""
-      )
-    );
-  };
-
   getImage = () => {
     if (this.state.renderText == "") {
       alert("Text field is empty");
@@ -73,10 +66,12 @@ export default class App extends React.Component {
       renderPromise
         .then(item =>
           this.setState({
-            render: "data:image/png;base64," + this.encodeBinary(item.data)
+            render: "data:image/png;base64," + base64ArrayBuffer(item.data)
           })
         )
-        .catch(error => alert("Error getting image"));
+        .catch(error => {
+          alert("Error getting image");
+        });
     }
   };
 
