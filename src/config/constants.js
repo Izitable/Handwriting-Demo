@@ -1,5 +1,5 @@
-export const KEY = $USER;
-export const SECRET = $KEY;
+export const KEY = "$USER";
+export const SECRET = "$KEY";
 
 export const BASE_URL = "https://api.handwriting.io";
 
